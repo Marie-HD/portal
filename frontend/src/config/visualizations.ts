@@ -280,6 +280,30 @@ export const VISUALIZATIONS: Visualization[] = [
     aspectRatio: "16:9",
   },
 
+   {
+    id: "ifeu- car age distribution ",
+    title: "Car age distribution and new registration in Germany ",
+    description: "The data how car age distribution in Germany in 2024 and compare cumulated new registrations with stock". This analysis was conducted by the ifeu - Institute for Energy and Environmental Research Heidelberg, using the German Emission Inventory Model (TREMOD) and information from the German Federal Motor Transport Authority (KBA).",
+    tags: ["Car stock", "Car new registrations","Age distribution"],
+    
+    embedUrl: extractUrl(
+      `https://public.tableau.com/views/AgedistributionofcarstockcomparisonwithnewregistrationsGermany/Agedistributioncomparisonnewregvs_stock?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link`
+    ),
+    thumbnailUrl: extractTableauThumbnail(`https://public.tableau.com/app/profile/ifeu.mobility1285/viz/AgedistributionofcarstockcomparisonwithnewregistrationsGermany/Agedistributioncomparisonnewregvs_stock.png`),
+  
+    // STEP 3: Link to datasets used
+    datasets: [
+      {
+        title: "Vehicle age - Road Transport Germany",
+        url: "https://portal.transport-data.org/@ifeu/vehicle-age-road-transport-germany"
+      }
+    ],
+    
+        aspectRatio: "16:9",
+  },
+  */
+];
+
   /* EXAMPLE
   {
     id: "tableau-eu-superstore",
