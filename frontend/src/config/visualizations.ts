@@ -244,9 +244,51 @@ export const VISUALIZATIONS: Visualization[] = [
     
     externalLink: "https://public.tableau.com/views/AgedistributionofcarstockcomparisonwithnewregistrationsGermany/Agedistributioncomparisonnewregvs_stock?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
   },
+{
+    id: "Stock_NR Nigeria",
+    title: "Stock and new registrations of passenger cars in Nigeria",
+    description: "The analysis is based on data published on the TDC Portal and visualised by the ifeu - Institute for Energy and Environmental Research Heidelberg. Interpetation of these data is given in the Guidance: national road vehicle fleet and registration for a bottom-up inventorys,
+    tags: ["car stock", "car new registrations","Nigeria"],
+    
+    embedUrl: extractUrl(
+      `https://public.tableau.com/views/StockandnewregistrationsofpassengercarsNigeria/Stock_newregistrations?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link`
+    ),
+    
+    // thumbnailUrl: `https://public.tableau.com/views/AgedistributionofcarstockcomparisonwithnewregistrationsGermany/Agedistributioncomparisonnewregvs_stock.png`,
+    thumbnailUrl: "",
+
+    datasets: [
+      {
+        title: "Passenger Cars Registrations and Stock, Nigeria 2005-2019",
+        url: "https://portal.transport-data.org/@oica/passenger-cars-registrations-and-stock-nigeria-2005-2019?org=OICA&dataset=passenger-cars-registrations-and-stock-nigeria-2005-2019"
+      }
+    ],
+    
+    externalLink: "https://public.tableau.com/app/profile/ifeu.mobility1285/viz/StockandnewregistrationsofpassengercarsNigeria/Stock_newregistrations",
+  },
 
 
+    id: "Car Stock_Datakit",
+    title: "Car stock in African countries – comparison of data sources from Transport Starter Data Kits",
+    description: "The analysis is based on data published on the TDC Portal: the CCG Transport Starter Data Kit and visualised by the ifeu - Institute for Energy and Environmental Research Heidelberg,
+    tags: ["car stock", "Africa","Tanzania","Ghana","Mozambique","Kenya","Cameroon"],
+    
+    embedUrl: extractUrl(
+      `https://public.tableau.com/views/CarstockinAfricancountriescomparisonofdatasourcesfromTransportStarterDataKits/Dashboard1?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link`
+    ),
+    
+    // thumbnailUrl: `https://public.tableau.com/views/AgedistributionofcarstockcomparisonwithnewregistrationsGermany/Agedistributioncomparisonnewregvs_stock.png`,
+    thumbnailUrl: "",
 
+    datasets: [
+      {
+        title: "Vehicle Stock from Transport Starter Data Kits",
+        url: "https://portal.transport-data.org/@ccg/vehicle-stock-from-ccg-transport-starter-data-kits?org=CCG&dataset=vehicle-stock-from-ccg-transport-starter-data-kits"
+      }
+    ],
+    
+    externalLink: "https://public.tableau.com/app/profile/ifeu.mobility1285/viz/CarstockinAfricancountriescomparisonofdatasourcesfromTransportStarterDataKits/Dashboard1#2",
+  },
   // ========================================
   // EASY TEMPLATE FOR ADDING NEW DASHBOARDS
   // ========================================
